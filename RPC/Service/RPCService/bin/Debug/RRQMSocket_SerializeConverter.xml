@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RRQMSocket_SerializeConverter</name>
+    </assembly>
+    <members>
+        <member name="T:RRQMSocket_SerializeConverter.JsonSerializeConverter">
+            <summary>
+            应用于RRQMSocket的Json序列化类
+            </summary>
+        </member>
+        <member name="M:RRQMSocket_SerializeConverter.JsonSerializeConverter.Deserialize(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="buffer"></param>
+            <param name="index"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RRQMSocket_SerializeConverter.JsonSerializeConverter.Serialize(RRQMSocket.RPC.RPCMethod)">
+            <summary>
+            
+            </summary>
+            <param name="waitResult"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

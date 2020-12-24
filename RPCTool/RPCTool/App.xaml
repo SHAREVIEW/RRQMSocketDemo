@@ -1,0 +1,15 @@
+﻿<Application x:Class="RPCTool.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:RPCTool"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <local:ViewModelLocator x:Key="Locator" />
+        
+        <ResourceDictionary x:Key="a">
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

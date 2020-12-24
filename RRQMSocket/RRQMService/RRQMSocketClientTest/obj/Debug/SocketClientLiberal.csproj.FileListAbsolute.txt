@@ -1,0 +1,9 @@
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\bin\Debug\SocketClientLiberal.dll
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\bin\Debug\SocketClientLiberal.pdb
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\bin\Debug\RRQMSocket.dll
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\bin\Debug\RRQMSocket.pdb
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\bin\Debug\RRQMSocket.xml
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\obj\Debug\SocketClientLiberal.csproj.CoreCompileInputs.cache
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\obj\Debug\SocketClientLiberal.csproj.CopyComplete
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\obj\Debug\SocketClientLiberal.dll
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\obj\Debug\SocketClientLiberal.pdb

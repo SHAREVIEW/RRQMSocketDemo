@@ -1,0 +1,15 @@
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\bin\Debug\RRQMSocket.dll
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\bin\Debug\RPCService.exe.config
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\bin\Debug\RPCService.exe
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\bin\Debug\RPCService.pdb
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\bin\Debug\RRQMSocket.pdb
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\bin\Debug\RRQMSocket.xml
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\obj\Debug\RPCService.csproj.CoreCompileInputs.cache
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\obj\Debug\RPCService.csproj.CopyComplete
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\obj\Debug\RPCService.exe
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\obj\Debug\RPCService.pdb
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\bin\Debug\RRQMSocket_SerializeConverter.dll
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\bin\Debug\Newtonsoft.Json.dll
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\bin\Debug\RRQMSocket_SerializeConverter.pdb
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\bin\Debug\RRQMSocket_SerializeConverter.xml
+E:\C#CLTestDemo\RRQMSocketDemo\RPC\Service\RPCService\obj\Debug\RPCService.csprojAssemblyReference.cache

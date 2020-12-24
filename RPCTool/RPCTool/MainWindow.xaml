@@ -1,0 +1,79 @@
+﻿<rrqmskin:RRQMWindow x:Class="RPCTool.MainWindow"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:local="clr-namespace:RPCTool"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     xmlns:rrqmskin="若汝棋茗_RRQMSkin"
+                     Title="MainWindow"
+                     Width="500"
+                     Height="300"
+                     DataContext="{Binding Source={StaticResource Locator}, Path=MainViewModel}"
+                     TitleContent="RPCTool"
+                     mc:Ignorable="d">
+    <rrqmskin:RRQMWindow.Resources>
+        <Style x:Key="LoadingStyle" TargetType="{x:Type rrqmskin:Loading}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type rrqmskin:Loading}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <rrqmskin:Sector EndAngle="360" Fill="#FFE8E8E7" MaxRadiusRatio="1" MinRadiusRatio="0.8" StartAngle="0" />
+                            <rrqmskin:Sector x:Name="sector"
+                                             EndAngle="{TemplateBinding EndAngle}"
+                                             Fill="{TemplateBinding Foreground}"
+                                             MaxRadiusRatio="1" MinRadiusRatio="0.8" RoundStyle="Both" StartAngle="0" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="rrqmskin:InputBox">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="CornerRadius" Value="3" />
+        </Style>
+        <Style TargetType="rrqmskin:CorrugatedButton">
+            <Setter Property="CornerRadius" Value="3" />
+        </Style>
+    </rrqmskin:RRQMWindow.Resources>
+
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock VerticalAlignment="Center" Text="目标文件夹：" />
+        <rrqmskin:InputBox Grid.Column="1" Grid.ColumnSpan="4" VerticalAlignment="Center"
+                           Text="{Binding DirPath}" />
+        <rrqmskin:CorrugatedButton Grid.Column="5" Width="70" Height="20" VerticalAlignment="Center"
+                                   Command="{Binding SelectDirCommand}"
+                                   Content="选择" />
+
+        <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="IP：" />
+        <rrqmskin:InputBox Grid.Row="1" Grid.Column="1" VerticalContentAlignment="Center" InputFilter="IPv4"
+                           Text="{Binding IP}" />
+        <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Port：" />
+        <rrqmskin:InputBox Grid.Row="1" Grid.Column="3" InputFilter="Uint"
+                           Text="{Binding Port}" />
+        <rrqmskin:Loading Grid.Row="1" Grid.Column="4" Width="30" Height="30" Background="Transparent"
+                          IsLoading="{Binding IsLoading}"
+                          Style="{DynamicResource LoadingStyle}" />
+      
+        <rrqmskin:CorrugatedButton Grid.Row="1" Grid.Column="5" Width="60" Height="30" Margin="5,0"
+                                   HorizontalAlignment="Center"
+                                   Command="{Binding GetInfoCommand}"
+                                   Content="下载" />
+
+        <TextBox Grid.Row="2" Grid.ColumnSpan="6" Margin="3" VerticalAlignment="Stretch" IsReadOnly="True"
+                 Text="{Binding LogString, Mode=OneWay}" />
+    </Grid>
+</rrqmskin:RRQMWindow>

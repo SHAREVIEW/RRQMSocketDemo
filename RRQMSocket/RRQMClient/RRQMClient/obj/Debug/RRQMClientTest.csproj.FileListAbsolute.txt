@@ -1,0 +1,11 @@
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMClient\RRQMClient\bin\Debug\RRQMClientTest.exe.config
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMClient\RRQMClient\bin\Debug\RRQMClientTest.exe
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMClient\RRQMClient\bin\Debug\RRQMClientTest.pdb
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMClient\RRQMClient\bin\Debug\RRQMSocket.dll
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMClient\RRQMClient\bin\Debug\RRQMSocket.pdb
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMClient\RRQMClient\bin\Debug\RRQMSocket.xml
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMClient\RRQMClient\obj\Debug\RRQMClientTest.csproj.CoreCompileInputs.cache
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMClient\RRQMClient\obj\Debug\RRQMClientTest.csproj.CopyComplete
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMClient\RRQMClient\obj\Debug\RRQMClientTest.exe
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMClient\RRQMClient\obj\Debug\RRQMClientTest.pdb
+E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMClient\RRQMClient\obj\Debug\RRQMClientTest.csprojAssemblyReference.cache
