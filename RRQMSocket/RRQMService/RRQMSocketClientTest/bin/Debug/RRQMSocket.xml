@@ -766,13 +766,11 @@
             释放资源
             </summary>
         </member>
-        <member name="M:RRQMSocket.FileTransfer.FileClient.RRQMTcpHandleBuffer(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:RRQMSocket.FileTransfer.FileClient.RRQMTcpHandleBuffer(System.Byte[])">
              <summary>
             
              </summary>
              <param name="buffer"></param>
-             <param name="index"></param>
-             <param name="length"></param>
         </member>
         <member name="T:RRQMSocket.FileTransfer.FileService">
             <summary>
@@ -913,13 +911,11 @@
             当文件发送完
             </summary>
         </member>
-        <member name="M:RRQMSocket.FileTransfer.FileSocketClient.RRQMTcpHandleBuffer(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:RRQMSocket.FileTransfer.FileSocketClient.RRQMTcpHandleBuffer(System.Byte[])">
              <summary>
             
              </summary>
              <param name="buffer"></param>
-             <param name="index"></param>
-             <param name="length"></param>
         </member>
         <member name="M:RRQMSocket.FileTransfer.FileSocketClient.GetNowTick">
             <summary>
@@ -1005,17 +1001,15 @@
             <summary>
             分解包
             </summary>
-            <param name="buffer"></param>
+            <param name="dataBuffer"></param>
             <param name="index"></param>
             <param name="r"></param>
         </member>
-        <member name="M:RRQMSocket.RRQMClient.RRQMTcpHandleBuffer(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:RRQMSocket.RRQMClient.RRQMTcpHandleBuffer(System.Byte[])">
             <summary>
             通过若汝棋茗专属报文格式解析
             </summary>
             <param name="buffer"></param>
-            <param name="index"></param>
-            <param name="length"></param>
         </member>
         <member name="M:RRQMSocket.RRQMClient.Send(System.Byte[])">
             <summary>
@@ -1450,7 +1444,7 @@
             <param name="mainSocket"></param>
             <param name="agreement"></param>
         </member>
-        <member name="M:RRQMSocket.RRQMTcp.SocketSend(System.Net.Sockets.Socket,System.Int32,System.Int64)">
+        <member name="M:RRQMSocket.RRQMTcp.SocketSend(System.Net.Sockets.Socket,System.Int32,System.Int32)">
             <summary>
             发送long数字
             </summary>
@@ -1464,6 +1458,15 @@
             </summary>
             <param name="mainSocket"></param>
             <param name="agreement"></param>
+            <param name="dataBuffer"></param>
+        </member>
+        <member name="M:RRQMSocket.RRQMTcp.SocketSend(System.Net.Sockets.Socket,System.Int32,System.Byte,System.Byte[])">
+            <summary>
+            发送字节
+            </summary>
+            <param name="mainSocket"></param>
+            <param name="agreement"></param>
+            <param name="status"></param>
             <param name="dataBuffer"></param>
         </member>
         <member name="T:RRQMSocket.TcpSocketCliectCollection">
@@ -1784,13 +1787,11 @@
             <param name="index"></param>
             <param name="r"></param>
         </member>
-        <member name="M:RRQMSocket.RRQMSocketClient.RRQMTcpHandleBuffer(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:RRQMSocket.RRQMSocketClient.RRQMTcpHandleBuffer(System.Byte[])">
             <summary>
             通过若汝棋茗专属报文格式解析
             </summary>
             <param name="buffer"></param>
-            <param name="index"></param>
-            <param name="length"></param>
         </member>
         <member name="M:RRQMSocket.RRQMSocketClient.Send(System.Byte[])">
             <summary>
@@ -2048,6 +2049,18 @@
             <summary>
             触发当前方法的实例(在多线程模式时，如不实现线程同步，该对象可能发生错误)
             </summary>
+        </member>
+        <member name="M:RRQMSocket.RPC.ServerProvider.RPCEnter(RRQMSocket.RPC.MethodItem)">
+            <summary>
+            RPC即将进入时
+            </summary>
+            <param name="methodItem"></param>
+        </member>
+        <member name="M:RRQMSocket.RPC.ServerProvider.RPCLeave(RRQMSocket.RPC.MethodItem)">
+            <summary>
+            RPC方法执行完成
+            </summary>
+            <param name="methodItem"></param>
         </member>
         <member name="T:RRQMSocket.RPC.RPCProtocolType">
             <summary>
@@ -2543,6 +2556,8 @@
             连接服务器
             </summary>
             <param name="setting"></param>
+            <exception cref="T:RRQMSocket.RRQMTimeoutException"></exception>
+            <exception cref="T:RRQMSocket.RPC.RRQMRPCException"></exception>
         </member>
         <member name="M:RRQMSocket.RPC.RPCClient.GetRPCReferencedAssemblies(System.String,System.Int32)">
             <summary>
@@ -2635,13 +2650,11 @@
             <exception cref="T:RRQMSocket.RPC.RRQMRPCInvokeException"></exception>
             <exception cref="T:RRQMSocket.RRQMException"></exception>
         </member>
-        <member name="M:RRQMSocket.RPC.RPCClient.RRQMTcpHandleBuffer(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:RRQMSocket.RPC.RPCClient.RRQMTcpHandleBuffer(System.Byte[])">
             <summary>
             处理数据
             </summary>
             <param name="buffer"></param>
-            <param name="index"></param>
-            <param name="length"></param>
         </member>
         <member name="M:RRQMSocket.RPC.RPCClient.ResolvePackage(System.Byte[])">
             <summary>
@@ -2710,7 +2723,7 @@
             已接收的客户端
             </summary>
         </member>
-        <member name="M:RRQMSocket.RPC.RRQMRPCSocketClient.#ctor">
+        <member name="M:RRQMSocket.RPC.RRQMRPCSocketClient.#ctor(RRQMSocket.RPC.MethodStore)">
             <summary>
             构造函数
             </summary>
@@ -2720,13 +2733,11 @@
             序列化生成器
             </summary>
         </member>
-        <member name="M:RRQMSocket.RPC.RRQMRPCSocketClient.RRQMTcpHandleBuffer(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:RRQMSocket.RPC.RRQMRPCSocketClient.RRQMTcpHandleBuffer(System.Byte[])">
             <summary>
             处理数据
             </summary>
             <param name="buffer"></param>
-            <param name="index"></param>
-            <param name="length"></param>
         </member>
         <member name="M:RRQMSocket.RPC.RRQMRPCSocketClient.ResolvePackage(System.Byte[])">
             <summary>

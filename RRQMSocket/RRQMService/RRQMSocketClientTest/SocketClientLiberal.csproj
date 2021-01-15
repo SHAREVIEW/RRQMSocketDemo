@@ -31,8 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="RRQMSocket">
-      <HintPath>..\..\..\..\..\C#ClassLibraries\RRQMSocket\RRQMSocket\bin\Debug\net45\RRQMSocket.dll</HintPath>
+    <Reference Include="RRQMSocket, Version=2.0.16.0, Culture=neutral, PublicKeyToken=a9db37c9b0783a15, processorArchitecture=MSIL">
+      <HintPath>..\packages\RRQMSocket.2.0.16\lib\net45\RRQMSocket.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,6 +47,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RRQMTcpSocketClient.cs" />
     <Compile Include="SimpleTcpSocketClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

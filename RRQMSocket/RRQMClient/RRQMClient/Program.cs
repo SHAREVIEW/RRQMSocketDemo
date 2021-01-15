@@ -48,9 +48,13 @@ namespace RRQMClientTest
             client.Connect(connectSetting);
             Console.WriteLine("连接成功");
 
-            for (int i = 0; i < 100000; i++)
+            for (int i = 0; i < 100000000; i++)
             {
-                // Console.ReadKey();
+                if (i%10000==0)
+                {
+                    Console.WriteLine(i);
+                }
+                
                 byte[] vs = Encoding.UTF8.GetBytes("若汝棋茗");
                 client.Send(vs);
             }

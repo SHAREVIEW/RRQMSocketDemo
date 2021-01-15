@@ -14,11 +14,11 @@ namespace RRQMClientTest
     public class RRQMTcpClient : RRQMClient
     {
         int a;
-        protected override void RRQMTcpHandleBuffer(byte[] buffer, int index, int length)
+        protected override void RRQMTcpHandleBuffer(byte[] buffer)
         {
-            string mes = Encoding.UTF8.GetString(buffer,index,length);
+            string mes = Encoding.UTF8.GetString(buffer,0,buffer.Length);
 
-            if (++a%1000==0)
+            if (++a%10000==0)
             {
                 Console.WriteLine($"{a}已接收到信息：{mes}");
             }

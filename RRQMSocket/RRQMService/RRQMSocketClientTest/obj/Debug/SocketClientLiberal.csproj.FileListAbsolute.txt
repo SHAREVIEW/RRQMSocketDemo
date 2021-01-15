@@ -7,3 +7,11 @@ E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\obj\D
 E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\obj\Debug\SocketClientLiberal.csproj.CopyComplete
 E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\obj\Debug\SocketClientLiberal.dll
 E:\C#CLTestDemo\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\obj\Debug\SocketClientLiberal.pdb
+D:\OpenCode\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\bin\Debug\SocketClientLiberal.dll
+D:\OpenCode\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\bin\Debug\SocketClientLiberal.pdb
+D:\OpenCode\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\bin\Debug\RRQMSocket.xml
+D:\OpenCode\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\obj\Debug\SocketClientLiberal.csproj.CoreCompileInputs.cache
+D:\OpenCode\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\obj\Debug\SocketClientLiberal.csproj.CopyComplete
+D:\OpenCode\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\obj\Debug\SocketClientLiberal.dll
+D:\OpenCode\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\obj\Debug\SocketClientLiberal.pdb
+D:\OpenCode\RRQMSocketDemo\RRQMSocket\RRQMService\RRQMSocketClientTest\bin\Debug\RRQMSocket.dll

@@ -19,18 +19,18 @@ namespace SocketClientLiberal
         /// </summary>
         /// <param name="buffer"></param>
         /// <param name="r"></param>
-        public override void RRQMTcpHandleBuffer(byte[] buffer, int index, int length)
+        public override void RRQMTcpHandleBuffer(byte[] buffer)
         {
             lock (this)
             {
-                if (++a % 1000 == 0)
+                if (++a % 10000 == 0)
                 {
                     Console.WriteLine(a);
                 }
             }
 
-            string mes = Encoding.UTF8.GetString(buffer,index,length);
-            this.Send(Encoding.UTF8.GetBytes(mes));//通过默认Send方法，把收到的数据原数返回，该数据完全和Client收到的数据一致
+            string mes = Encoding.UTF8.GetString(buffer, 0, buffer.Length);
+            // this.Send(Encoding.UTF8.GetBytes(mes));//通过默认Send方法，把收到的数据原数返回，该数据完全和Client收到的数据一致
         }
     }
 }
